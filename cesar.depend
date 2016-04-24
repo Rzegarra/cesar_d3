@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1461523971 source:c:\users\zer\desktop\c++\cesar\main.cpp
+	<iostream>
+	"euclide.h"
+
+1461522462 c:\users\zer\desktop\c++\cesar\include\euclide.h
+
+1461523211 source:c:\users\zer\desktop\c++\cesar\src\cesar.cpp
+	"cesar.h"
+
+1461523602 c:\users\zer\desktop\c++\cesar\include\cesar.h
+
+1461523936 source:c:\users\zer\desktop\c++\cesar\src\euclide.cpp
+	<iostream>
+	"euclide.h"
+
