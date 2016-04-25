@@ -5,6 +5,7 @@
 class euclide
 {
     public:
+        int inversa;
         int *vacio=new int;
         int mcd;
         int ext;

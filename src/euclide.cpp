@@ -12,24 +12,25 @@ int euclide::mcdi(int a, int b)
         vacio[i]=a/b;
         a=b;
         b=temp;
-        cout<<vacio[i];
+//        cout<<vacio[i];
         i++;
     }
-    iteracion=i;
-
-    cout<<"iteracion = "<<iteracion<<endl;
+    iteracion=i-1;
+//    cout<<"iteracion = "<<iteracion<<endl;
     return a;
 }
 void euclide::extendido()
 {
     int aux=1;
-    for(int i =iteracion-3;i>=0;i--)
+    for(int i =iteracion-2;i>=0;i--)
     {
-        cout<<vacio[i]<<endl;
         vacio[i]=vacio[i+1]*vacio[i]+aux;
         aux=vacio[i+1];
-        cout<<vacio[i]<<endl;
     }
+    if (iteracion%2!=0)
+        vacio[0]=vacio[0]*-1;
+    cout<<"la inversa es = "<<vacio[0]<<endl;
+    delete []vacio;
 }
 euclide::euclide(int a , int b)
 {   int temp;
