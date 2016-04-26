@@ -28,8 +28,11 @@ void euclide::extendido()
         aux=vacio[i+1];
     }
     if (iteracion%2!=0)
+    {
         vacio[0]=vacio[0]*-1;
-    cout<<"la inversa es = "<<vacio[0]<<endl;
+    }
+    inversa=vacio[0];
+    opuesto=vacio[1];
     delete []vacio;
 }
 euclide::euclide(int a , int b)
@@ -39,10 +42,14 @@ euclide::euclide(int a , int b)
         temp=a;
         a=b;
         b=temp;
-    }
-    mcd=mcdi(a,b);
-}
 
+    }
+    A=a;
+    B=b;
+    mcd=mcdi(a,b);
+
+    extendido();
+}
 euclide::~euclide()
 {
     //dtor
